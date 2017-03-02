@@ -1,4 +1,13 @@
-基于Heka，ElasticSearch和Kibana的分布式后端日志架构（一）
+```toml
+title = "基于Heka，ElasticSearch和Kibana的分布式后端日志架构（一）"
+slug = "heka-elasticserach-kibana-1"
+desc = "基于Heka，ElasticSearch和Kibana的分布式后端日志架构（一）"
+date = "2017-03-02 23:17:33"
+update_date = "2017-03-22 23:17:33"
+author = "libi"
+thumb = ""
+tags = ["thrift","laravel"]
+```
 
 目前主流的后端日志都采用的标准的elk模式（Elasticsearch，Logstash，Kinaba），分别负责日志存储，收集和日志可视化。
 
