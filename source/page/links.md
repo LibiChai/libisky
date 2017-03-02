@@ -2,7 +2,7 @@
 title = 友情链接
 slug = links
 desc = 友情链接
-date = 2015-12-24
+date = 2016-07-24
 author = libi
 ; set nav to active status when this page
 hover = about

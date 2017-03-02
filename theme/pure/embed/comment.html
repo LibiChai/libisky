@@ -3,21 +3,20 @@
     {{if .Comment.Disqus}}
     <div id="disqus_thread"></div>
     <script>
-                var disqus_config = function () {
-                    this.page.url = "{{fullUrl .Permalink}}"; // Replace PAGE_URL with your page's canonical URL variable
-                };
-                (function () {
-                    var d = document, s = d.createElement('script');
-                    s.src = '//{{.Comment.Disqus}}.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
-                powered by Disqus.</a></noscript>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = '//{{.Comment.Disqus}}.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     {{end}}
-    {{if .Comment.Duoshuo}}<div class="row">
-        <div class="ds-thread" data-thread-key="{{.PermaKey}}" data-title="{{.Title}}" data-url="{{fullUrl .Permalink}}"></div>
+    {{if .Comment.Duoshuo}}
+    <div class="row">
+        <div class="ds-thread" data-thread-key="{{.PermaKey}}" data-title="{{.Title}}" data-url="{{.Root}}{{.URL}}"></div>
         <script type="text/javascript">
             var duoshuoQuery = {short_name:"{{.Comment.Duoshuo}}"};
             (function() {
